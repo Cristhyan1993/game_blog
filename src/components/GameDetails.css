@@ -1,0 +1,81 @@
+.game-details {
+  padding: 4rem 0rem;
+  max-width: 1280px;
+}
+
+.game-details > h1 {
+  color: rgb(22, 59, 123);
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.game-details > h3 {
+  margin: 10px 0px;
+  font-weight: 500;
+}
+
+.game-details > p {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1280px) {
+  .game-details {
+    padding: 3rem 4rem;
+  }
+
+  .game-details > h1 {
+    font-size: 30px;
+  }
+
+  .game-details > h3 {
+    font-size: 20px;
+  }
+
+  .game-details > p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .game-details {
+    padding: 2rem 3rem;
+  }
+
+  .game-details > h1 {
+    font-size: 25px;
+  }
+
+  .game-details > h3 {
+    font-size: 15px;
+  }
+
+  .game-details > p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .game-details {
+  }
+  .game-details > h1 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .game-details {
+    padding: 2rem 1rem;
+  }
+
+  .game-details > h1 {
+    font-size: 25px;
+  }
+
+  .game-details > h3 {
+    font-size: 15px;
+  }
+
+  .game-details > p {
+    font-size: 14px;
+  }
+}
