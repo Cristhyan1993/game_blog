@@ -7,7 +7,7 @@ import "./videoCards.css"
 const VideoCards = ({ cardDetails }) => {
     return (
         <div className='card_container'>
-            {cardDetails.map(video => {
+            {cardDetails.videos.map(video => {
                 return (
                     <div className='card_item'>
                         <h2>{video.videoTitle}</h2>
