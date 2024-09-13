@@ -2,8 +2,6 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlaystation } from '@fortawesome/free-brands-svg-icons'
 // import { faStar } from '@fortawesome/free-solid-svg-icons'
-
-
 import './GameDetails.css'
 
 function GameDetails(props) {
@@ -23,7 +21,6 @@ function GameDetails(props) {
       <p>{props.gameDetails.gameReview.multiplayer}</p>
       <h2>Conclusion:</h2>
       <p>{props.gameDetails.gameReview.conclusion.description}</p>
-
       <div className='ratings-container'>
         <div className='ratings-item'>
           <h2>My Score:</h2>

@@ -5,13 +5,7 @@ import './HeroSection.css'
 function HeroSection(props) {
   return (
     <div className="hero-container">
-      {props.gameDetails.imgCover ? (<img src={props.gameDetails.imgCover} alt='#'/>) : (<video
-        src={props.gameDetails.vidCover}
-        //autoPlay
-        loop
-        muted
-      />)
-      }
+      {<img src={props.gameDetails.imgCover} alt='#'/>}
       
       <h1>{props.gameDetails.title}</h1>
       <p>{props.gameDetails.heroText}</p>

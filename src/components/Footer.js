@@ -8,12 +8,12 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-          Join the Adventure newsletter to receive our best vacation deals
+          Join my adventure and return soon for more reviews.
         </p>
         <p className='footer-subscription-text'>
-          You can unsubscribe at any time.
+          More reviews coming soon.
         </p>
-        <div className='input-areas'>
+        {/* <div className='input-areas'>
           <form>
             <input
               className='footer-input'
@@ -23,40 +23,24 @@ function Footer() {
             />
             <Button buttonStyle='btn--outline'>Subscribe</Button>
           </form>
-        </div>
+        </div> */}
       </section>
       <div className='footer-links'>
         <div className='footer-link-wrapper'>
           <div className='footer-link-items'>
-            <h2>About Us</h2>
-            <Link to='/sign-up'>How it works</Link>
-            <Link to='/'>Testimonials</Link>
-            <Link to='/'>Careers</Link>
-            <Link to='/'>Investors</Link>
-            <Link to='/'>Terms of Service</Link>
+            <h2><Link to='/sign-up'>About Me</Link></h2>
           </div>
           <div className='footer-link-items'>
-            <h2>Contact Us</h2>
-            <Link to='/'>Contact</Link>
-            <Link to='/'>Support</Link>
-            <Link to='/'>Destinations</Link>
-            <Link to='/'>Sponsorships</Link>
+            <h2>Contact</h2>
+            <p>cristhyancalderon@gmail.com</p>
           </div>
         </div>
         <div className='footer-link-wrapper'>
           <div className='footer-link-items'>
-            <h2>Videos</h2>
-            <Link to='/'>Submit Video</Link>
-            <Link to='/'>Ambassadors</Link>
-            <Link to='/'>Agency</Link>
-            <Link to='/'>Influencer</Link>
-          </div>
-          <div className='footer-link-items'>
             <h2>Social Media</h2>
-            <Link to='/'>Instagram</Link>
-            <Link to='/'>Facebook</Link>
-            <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
+            <Link to='https://www.instagram.com/cristhyan93/' target='_blank'>Instagram</Link>
+            <Link to='https://www.facebook.com/cristhyan.calderon/' target='_blank'>Facebook</Link>
+            <Link to='https://www.youtube.com/@nayhtsirc' target='_blank'>Youtube</Link>
           </div>
         </div>
       </div>
@@ -72,7 +56,7 @@ function Footer() {
           <div className='social-icons'>
             <Link
               className='social-icon-link facebook'
-              to='/'
+              to='https://www.facebook.com/cristhyan.calderon/'
               target='_blank'
               aria-label='Facebook'
             >
@@ -80,7 +64,7 @@ function Footer() {
             </Link>
             <Link
               className='social-icon-link instagram'
-              to='/'
+              to='https://www.instagram.com/cristhyan93/'
               target='_blank'
               aria-label='Instagram'
             >
@@ -88,23 +72,15 @@ function Footer() {
             </Link>
             <Link
               className='social-icon-link youtube'
-              to='/'
+              to='https://www.youtube.com/@nayhtsirc'
               target='_blank'
               aria-label='Youtube'
             >
               <i className='fab fa-youtube' />
             </Link>
             <Link
-              className='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='Twitter'
-            >
-              <i className='fab fa-twitter' />
-            </Link>
-            <Link
-              className='social-icon-link twitter'
-              to='/'
+              className='social-icon-link linkedIn'
+              to='https://www.linkedin.com/in/criscalderon/'
               target='_blank'
               aria-label='LinkedIn'
             >
