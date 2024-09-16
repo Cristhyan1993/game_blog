@@ -5,7 +5,7 @@ const MoreGames = () => {
     return (
         <div className='text-container' id='more-games'>
             <h1>More Games</h1>
-            <p>* Yet to be reviewd</p>
+            <p>* Yet to be reviewed</p>
             <ul>
                 <li>Batman: Arkham Knight*</li>
                 <li>Fall Guys*</li>
