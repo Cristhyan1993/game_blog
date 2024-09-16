@@ -8,7 +8,7 @@ import './Swiper.css'
 
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
-const SwiperComponent = () => {
+const SwiperComponent = (props) => {
     return (
         <div className='swiper-container'>
         <h1>Gallery</h1>
@@ -21,22 +21,21 @@ const SwiperComponent = () => {
                 scrollbar={{ draggable: true }}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}>
-                <SwiperSlide>
-                    <div className="swiper-item">
-                        <img src="images/Elden-Ring.jpg" />
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="swiper-item">
-                        <img src="images/Crash-Team-Racing-Nitro-Fueled.jpg" />
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    helloqqqqqqqqqqqqqqqq
-                </SwiperSlide>
-                <SwiperSlide>
-                    helloqqqqqqqqqqqqqqqq
-                </SwiperSlide>
+                
+                    {props.gameDetails.images.gallery.map(image => {
+                        return (
+                            <SwiperSlide>
+                            <div className='swiper-item'>
+                                <img src={image.src} alt={image.alt}/>
+                            </div>
+                            </SwiperSlide>
+                        )
+                    })}
+
+                    
+                
+                
+                
             </Swiper>
         </div>
     )

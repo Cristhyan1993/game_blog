@@ -1,14 +1,22 @@
 import React from 'react'
-import '../App.css'
 import HeroSection from '../components/HeroSection'
 import GameDetails from '../components/GameDetails'
 import VideoCards from "../components/VideoCards";
+import SwiperComponent from '../components/Swiper';
 
 
 function RocketLeague() {
   const rocketLeagueDetails = { 
     title: "Rocket League",
-    imgCover: "images/Rocket-League.jpg",
+    images: {
+      cover: "images/Rocket-League.jpg",
+      gallery:[
+        {imageTitle:"", src:"", alt:""},
+      ]
+    },
+    videos: [
+      { videoTitle: "", url: "", description: "" },
+    ],
     heroText: "View my rank",
     gameReview: {
       gameOverview:'',
@@ -24,9 +32,6 @@ function RocketLeague() {
     },
   }
 
-  const rocketLeagueCards = [
-    { videoTitle: "", url: "", description: "" },
-    ]
  
   return (
     <div>
@@ -35,7 +40,8 @@ function RocketLeague() {
     />
     <div className="main">
       <GameDetails gameDetails={rocketLeagueDetails} />
-      {/* <VideoCards cardDetails={rocketLeagueCards} /> */}
+      <SwiperComponent gameDetails={rocketLeagueDetails}/>
+      {/* <VideoCards cardDetails={rocketLeagueDetails} /> */}
     </div>
   </div> )
 }

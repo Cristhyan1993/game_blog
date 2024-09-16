@@ -4,18 +4,28 @@ import HeroSection from "../components/HeroSection";
 import GameDetails from "../components/GameDetails";
 import VideoCards from "../components/VideoCards";
 import SwiperComponent from "../components/Swiper";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
 
-import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
 function Ctr() {
   const ctrDetails = {
     title: "Crash Team Racing Nitro fueled",
-    imgCover: "images/Crash-Team-Racing-Nitro-Fueled.jpg",
+    images: {
+      cover: "images/Crash-Team-Racing-Nitro-Fueled.jpg",
+      gallery: [
+        { imageTitle: "", src: "images/Elden-Ring.jpg", alt: "" },
+        { imageTitle: "", src: "images/Crash-Team-Racing-Nitro-Fueled.jpg", alt: "" },
+        { imageTitle: "", src: "images/Rocket-League.jpg", alt: "" },
+      ]
+    },
+    videos: [
+      { videoTitle: "Polar Pass", url: "ZTUTvJ4AGEU", description: "some desciprion about the video" },
+      { videoTitle: "Drive Thru Danger", url: "s4_5SliIEKI", description: "some desciprion about the video" },
+      { videoTitle: "Retro Stadium", url: "dSjnf1NBphM", description: "some desciprion about the video" },
+      { videoTitle: "Prehistoric Playground", url: "oZaVAc_WQW0", description: "some desciprion about the video" },
+      { videoTitle: "Oxide Station", url: "E5osPHhvZ8o", description: "some desciprion about the video" },
+      { videoTitle: "Sewer Speedway", url: "HHLki_-WjM4", description: "some desciprion about the video" },
+      { videoTitle: "Papu's Pyramid", url: "rqoXVNTPQtM", description: "some desciprion about the video" }
+    ],
     heroText: "Developer time trials and more...",
     gameReview: {
       gameOverview: 'Rev up your engines, "Crash Team Racing Nitro-Fueled" brings a polished homage to the beloved 1999 classic. This remake not only revitalizes the iconic kart racer but adds enough modern tweaks to make it a must-play for both long-time fans and newcomers alike.',
@@ -33,22 +43,13 @@ function Ctr() {
     },
   }
 
-  const ctrCards = [
-    { videoTitle: "Polar Pass", url: "ZTUTvJ4AGEU", description: "some desciprion about the video" },
-    { videoTitle: "Drive Thru Danger", url: "s4_5SliIEKI", description: "some desciprion about the video" },
-    { videoTitle: "Retro Stadium", url: "dSjnf1NBphM", description: "some desciprion about the video" },
-    { videoTitle: "Prehistoric Playground", url: "oZaVAc_WQW0", description: "some desciprion about the video" },
-    { videoTitle: "Oxide Station", url: "E5osPHhvZ8o", description: "some desciprion about the video" },
-    { videoTitle: "Sewer Speedway", url: "HHLki_-WjM4", description: "some desciprion about the video" },
-    { videoTitle: "Papu's Pyramid", url: "rqoXVNTPQtM", description: "some desciprion about the video" },
-  ]
   return (
     <div>
-      <HeroSection gameDetails={ctrDetails}/>
+      <HeroSection gameDetails={ctrDetails} />
       <div className="main">
         <GameDetails gameDetails={ctrDetails} />
-        <SwiperComponent/>
-        {/* <VideoCards cardDetails={ctrCards} /> */}
+        <SwiperComponent gameDetails={ctrDetails} />
+        {/* <VideoCards cardDetails={ctrDetails} /> */}
       </div>
     </div>
   );

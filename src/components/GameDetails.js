@@ -24,11 +24,11 @@ function GameDetails(props) {
       <div className='ratings-container'>
         <div className='ratings-item'>
           <h2>My Score:</h2>
-          <p>{props.gameDetails.gameReview.difficulty.rating}/10 <i className="fa-solid fa-star star"/></p>
+          <p>{props.gameDetails.gameReview.conclusion.score}/10 <i className="fa-solid fa-star star"/></p>
         </div>
         <div className='ratings-item'>
           <h2>Difficulty rating:</h2>
-          <p>{props.gameDetails.gameReview.conclusion.score}/10 <i className="fa-solid fa-fire fire"/></p>
+          <p>{props.gameDetails.gameReview.difficulty.rating}/10 <i className="fa-solid fa-fire fire"/></p>
         </div>
       </div>
     </div>

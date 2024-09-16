@@ -3,12 +3,21 @@ import '../App.css'
 import HeroSection from '../components/HeroSection'
 import GameDetails from '../components/GameDetails'
 import VideoCards from "../components/VideoCards";
+import SwiperComponent from '../components/Swiper';
 
 
 function Fifa() {
   const fifaDetails = { 
     title: "Fifa 23",
-    imgCover: "images/Fifa-23.jpg",
+    images: {
+      cover: "images/Fifa-23.jpg",
+      gallery:[
+        {imageTitle:"", src:"", alt:""},
+      ]
+    },
+    videos: [
+      { videoTitle: "", url: "", description: "" },
+    ],
     heroText: "Ultimate team",
     gameReview: {
       gameOverview:'',
@@ -24,10 +33,6 @@ function Fifa() {
     },
   }
 
-  const fifaCards = [
-    { videoTitle: "", url: "", description: "" },
-    ]
-
   return (
     <div>
     <HeroSection
@@ -35,7 +40,8 @@ function Fifa() {
     />
     <div className="main">
       <GameDetails gameDetails={fifaDetails} />
-      {/* <VideoCards cardDetails={fifaCards} /> */}
+      <SwiperComponent gameDetails={fifaDetails}/>
+      {/* <VideoCards cardDetails={fifaDetails} /> */}
     </div>
   </div> 
  )

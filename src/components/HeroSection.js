@@ -5,7 +5,7 @@ import './HeroSection.css'
 function HeroSection(props) {
   return (
     <div className="hero-container">
-      {<img src={props.gameDetails.imgCover} alt='#'/>}
+      {<img src={props.gameDetails.images.cover} alt='#'/>}
       
       <h1>{props.gameDetails.title}</h1>
       <p>{props.gameDetails.heroText}</p>
