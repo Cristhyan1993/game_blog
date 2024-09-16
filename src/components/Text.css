@@ -1,30 +1,41 @@
-.aboutme-container {
+.text-container {
   padding: 3rem;
   max-width: 1280px;
 }
 
-.aboutme-container > h1 {
+#more-games {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+.text-container > h1 {
   color: rgb(22, 59, 123);
   font-weight: 500;
   font-size: 30px;
 }
 
-.aboutme-container > h2 {
+.text-container > h2 {
   color: rgb(22, 59, 123);
   font-weight: 500;
   font-size: 25px;
   margin-top: 15px;
 }
 
-.aboutme-container > h3 {
+.text-container > h3 {
   color: rgb(22, 59, 123);
   font-weight: 400;
   font-size: 20px;
   margin-top: 15px;
 }
 
-.aboutme-container > p {
+.text-container > p {
   font-size: 18px;
+  margin-top: 10px;
+}
+
+.text-container > ul {
   margin-top: 10px;
 }
 
@@ -37,29 +48,29 @@
 }
 
 @media screen and (max-width: 1280px) {
-  .aboutme-container {
+  .text-container {
     padding: 3rem 4rem;
   }
 
-  .aboutme-container > h1 {
+  .text-container > h1 {
     font-size: 30px;
   }
 
-  .aboutme-container > h3 {
+  .text-container > h3 {
     font-size: 20px;
   }
 
-  .aboutme-container > p {
+  .text-container > p {
     font-size: 16px;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .aboutme-container {
+  .text-container {
     padding: 2rem 3rem;
   }
 
-  .aboutme-container > h1 {
+  .text-container > h1 {
     font-size: 25px;
   }
 
@@ -67,37 +78,37 @@
     font-size: 20px;
   }
 
-  .aboutme-container > h3 {
+  .text-container > h3 {
     font-size: 15px;
   }
 
-  .aboutme-container > p {
+  .text-container > p {
     font-size: 14px;
   }
 }
 
 @media screen and (max-width: 960px) {
-  .aboutme-container {
+  .text-container {
   }
-  .aboutme-container > h1 {
+  .text-container > h1 {
     font-size: 20px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .aboutme-container {
+  .text-container {
     padding: 2rem 1rem;
   }
 
-  .aboutme-container > h1 {
+  .text-container > h1 {
     font-size: 25px;
   }
 
-  .aboutme-container > h3 {
+  .text-container > h3 {
     font-size: 15px;
   }
 
-  .aboutme-container > p {
+  .text-container > p {
     font-size: 14px;
   }
 }

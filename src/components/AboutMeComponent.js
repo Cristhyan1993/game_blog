@@ -1,10 +1,10 @@
 import React from 'react'
-import "./AboutMeComponent.css"
 import { Link } from 'react-router-dom'
+import "./Text.css"
 
 const AboutMeComponent = () => {
     return (
-        <div className='aboutme-container'>
+        <div className='text-container'>
             <h1>About me</h1>
             <p>
                 Welcome to my corner of the gaming universe! I'm Cris a lifelong gamer with a passion for all things PlayStation. From epic single-player adventures to adrenaline-pumping multiplayer experiences, I’ve been exploring every corner of the PlayStation ecosystem for years.

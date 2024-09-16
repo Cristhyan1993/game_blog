@@ -16,7 +16,9 @@ function EldenRing() {
       ]
     },
     videos: [
-      { videoTitle: "Messmer the Impaler Boss fight", url: "xycwWCmjVMM", description: "Boss fight Messmer the Impaler, Shadow of the Erdtree DLC" },
+      { videoTitle: "Messmer the Impaler Boss Fight", url: "xycwWCmjVMM", description: "Boss fight Messmer the Impaler, Shadow of the Erdtree DLC." },
+      { videoTitle: "Melania, Blade of Miquella Boss Fight", url: "6F0adx0FEZU", description: "Boss fight Melania, Blade of Miquella both phases." },
+
     ],
     heroText: "Boss battles and more...",
     gameReview: {
@@ -34,7 +36,7 @@ function EldenRing() {
       }
     },
   }
-
+  
   return (
     <div>
       <HeroSection

@@ -12,7 +12,7 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src='images/Crash-Team-Racing-Nitro-Fueled.jpg'
-              text='See my developer time trials and more...'
+              text='Developer time trials.'
               label='Crash Team Racing Nitro-Fueled'
               path='/ctr'
             />
@@ -26,8 +26,8 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src='images/Call-of-Duty.jpg'
-              text='In game stats and gameplay'
-              label='Call of Duty Modern Warefare 2'
+              text='In game stats and gameplay.'
+              label='Call of Duty Modern Warefare 3'
               path='/callofduty'
             />
             <CardItem
@@ -38,7 +38,7 @@ function Cards() {
             />
             <CardItem
               src='images/Elden-Ring.jpg'
-              text='Gameplay and Boss Fights'
+              text='Gameplay and Boss Fights.'
               label='Elden Ring'
               path='/eldenring'
             />

@@ -2,17 +2,24 @@ import React from 'react'
 // import '../../App.css'
 import HeroSection from '../components/HeroSection'
 import Cards from '../components/Cards';
+import LandingText from '../components/LandingText';
+import MoreGames from '../components/MoreGames';
 
 function Home () {
     const homeDetails = { 
-        title: "Welcome to my-Gmz",
+        title: "my-Gmz",
         images:{cover:"/images/homepage.jpeg"},
         heroText: "Because Every Game Deserves a Great Review.",
       }
     return (
         <>
             <HeroSection gameDetails={homeDetails}/>
-            <Cards/>
+            <div className='main'>
+               <LandingText/>
+            <Cards/>  
+               <MoreGames/>
+            </div>
+           
         </>
     )
 }

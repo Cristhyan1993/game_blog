@@ -8,11 +8,13 @@ import SwiperComponent from '../components/Swiper';
 
 function CallofDuty() {
   const callOfDutyDetails = {
-    title: "Call of Duty Modern Warefare 2",
+    title: "Call of Duty Modern Warefare 3",
     images: {
       cover: "images/Call-of-Duty.jpg",
       gallery: [
-        { imageTitle: "", src: "images/Elden-Ring.jpg", alt: "" },
+        { imageTitle: "", src: "images/Call-Of-Duty2.jpg", alt: "" },
+        { imageTitle: "", src: "images/Call-Of-Duty3.jpg", alt: "" },
+
       ]
     },
     videos: [
@@ -23,7 +25,7 @@ function CallofDuty() {
       gameOverview: '',
       difficulty: {
         description: "",
-        rating: 7
+        rating: 6
       },
       multiplayer: "",
       conclusion: {
