@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import YoutubeVideo from './YoutubeVideo';
-import "./VideoCards.css"
+import "./videoCards.css"
 
 const VideoCards = ({ cardDetails }) => {
     return (
