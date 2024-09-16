@@ -13,6 +13,7 @@ const MoreGames = () => {
                 <li>Crash Bandicoot N. Sane Trilogy*</li>
                 <li>Crash Bandicoot 4: It's About Time*</li>
                 <li>Pokemon Brilliant Diamond*</li>
+                <li>Call of Duty Black Ops 6 </li>
             </ul>
         </div>
     )
