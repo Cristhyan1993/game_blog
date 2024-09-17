@@ -26,7 +26,7 @@ function Navbar() {
             <NavLink to="/" onClick={() => setMenuOpen(!menuOpen)}>Home</NavLink>
           </li>
           <li>
-            <NavLink to="/aboutme" onClick={() => setMenuOpen(!menuOpen)}>About me</NavLink>
+            <NavLink to="/aboutme" onClick={() => setMenuOpen(!menuOpen)}>About Me</NavLink>
           </li>
           <li>
             <LinkScroll to='cards' spy={true} smooth={true} offset={-150} duration={500} onClick={() => setMenuOpen(!menuOpen)}>

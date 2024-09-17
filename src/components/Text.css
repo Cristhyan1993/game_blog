@@ -39,6 +39,10 @@
   margin-top: 10px;
 }
 
+.text-container > ul > li {
+  list-style-type: none
+}
+
 .social-icons {
   margin-top: 10px;
 }

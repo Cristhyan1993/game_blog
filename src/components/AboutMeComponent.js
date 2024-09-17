@@ -5,7 +5,7 @@ import "./Text.css"
 const AboutMeComponent = () => {
     return (
         <div className='text-container'>
-            <h1>About me</h1>
+            <h1>About Me</h1>
             <p>
                 Welcome to my corner of the gaming universe! I'm Cris a lifelong gamer with a passion for all things PlayStation. From epic single-player adventures to adrenaline-pumping multiplayer experiences, I’ve been exploring every corner of the PlayStation ecosystem for years.
             </p>
@@ -54,14 +54,14 @@ const AboutMeComponent = () => {
                     <i className='fab fa-linkedin' />
                 </Link>
             </div>
-            <h2>Other interests</h2>
+            <h2>Other Interests</h2>
             <p>
                 CrossFit enthusiast and weightlifter. Fitness has become a huge part of my life, and I’m constantly pushing my limits in both strength and conditioning. Whether it's mastering Olympic lifts or crushing a challenging WOD, I’m always seeking ways to improve and challenge myself.</p>
             <p>
                 CrossFit has taught me the importance of functional fitness and versatility, while weightlifting has instilled discipline, technique, and pure strength. Both have transformed the way I view health and wellness.
             </p>
             <p>
-            I’m also a lifelong Manchester United fan! From the highs of Premier League glory to the nail-biting moments of European football, I've stood by United through it all. There's something special about following a club with such rich history, legendary players, and unforgettable moments.For me, supporting Manchester United isn’t just about watching games—it's a passion that runs deep. Whether it's celebrating dramatic last-minute goals or enduring the tough seasons.
+            I’m also a lifelong Manchester United fan! From the highs of Premier League glory to the nail-biting moments of European football, I've stood by United through it all. There's something special about following a club with such rich history, legendary players, and unforgettable moments. For me, supporting Manchester United isn’t just about watching games—it's a passion that runs deep. Whether it's celebrating dramatic last-minute goals or enduring the tough seasons.
             </p>
         </div>
     )

@@ -4,6 +4,7 @@ import HeroSection from "../components/HeroSection";
 import GameDetails from "../components/GameDetails";
 import VideoCards from "../components/VideoCards";
 import SwiperComponent from "../components/Swiper";
+import { Link } from "react-router-dom";
 
 
 function Ctr() {
@@ -18,13 +19,10 @@ function Ctr() {
       ]
     },
     videos: [
-      { videoTitle: "Polar Pass", url: "ZTUTvJ4AGEU", description: "some desciprion about the video" },
-      { videoTitle: "Drive Thru Danger", url: "s4_5SliIEKI", description: "some desciprion about the video" },
-      { videoTitle: "Retro Stadium", url: "dSjnf1NBphM", description: "some desciprion about the video" },
-      { videoTitle: "Prehistoric Playground", url: "oZaVAc_WQW0", description: "some desciprion about the video" },
-      { videoTitle: "Oxide Station", url: "E5osPHhvZ8o", description: "some desciprion about the video" },
-      { videoTitle: "Sewer Speedway", url: "HHLki_-WjM4", description: "some desciprion about the video" },
-      { videoTitle: "Papu's Pyramid", url: "rqoXVNTPQtM", description: "some desciprion about the video" }
+      { videoTitle: "Polar Pass", url: "ZTUTvJ4AGEU", description: "Difficulty: 5/10 Fun: 10/10" },
+      { videoTitle: "Drive Thru Danger", url: "s4_5SliIEKI", description: "Difficulty: 8/10 Fun: 10/10" },
+      { videoTitle: "Twilight Tour", url: "b_Cxh2su2T8", description: "Difficulty: 6/10 Fun: 10/10" },
+      { videoTitle: "Turbo Track", url: "R_rPGNXW6UM", description: "Difficulty: 9/10 Fun: 7/10" }
     ],
     heroText: "Developer time trials and more...",
     gameReview: {
@@ -49,7 +47,10 @@ function Ctr() {
       <div className="main">
         <GameDetails gameDetails={ctrDetails} />
         <SwiperComponent gameDetails={ctrDetails} />
-        {/* <VideoCards cardDetails={ctrDetails} /> */}
+        <VideoCards cardDetails={ctrDetails} />
+        <h3>More CTR videos can be found on my <Link to='https://www.youtube.com/@nayhtsirc'
+              target='_blank'
+              aria-label='Youtube'>Youtube channel</Link></h3>
       </div>
     </div>
   );
