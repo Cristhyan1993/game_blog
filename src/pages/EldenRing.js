@@ -12,7 +12,10 @@ function EldenRing() {
     images: {
       cover: "images/Elden-Ring.jpg",
       gallery:[
-        {imageTitle:"", src:"", alt:""},
+        {imageTitle:"", src:"images/Elden-Ring5.jpg", alt:""},
+        {imageTitle:"", src:"images/Elden-Ring3.jpg", alt:""},
+        {imageTitle:"", src:"images/Elden-Ring2.jpg", alt:""},
+        {imageTitle:"", src:"images/Elden-Ring4.jpg", alt:""},
       ]
     },
     videos: [

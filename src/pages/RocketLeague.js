@@ -11,7 +11,9 @@ function RocketLeague() {
     images: {
       cover: "images/Rocket-League.jpg",
       gallery:[
-        {imageTitle:"", src:"", alt:""},
+        {imageTitle:"", src:"images/Rocket-League2.jpg", alt:""},
+        {imageTitle:"", src:"images/Rocket-League3.jpg", alt:""},
+        
       ]
     },
     videos: [

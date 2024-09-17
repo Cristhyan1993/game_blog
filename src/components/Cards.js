@@ -12,13 +12,13 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src='images/Crash-Team-Racing-Nitro-Fueled.jpg'
-              text='Developer time trials.'
+              text='Developer Time Trials.'
               label='Crash Team Racing Nitro-Fueled'
               path='/ctr'
             />
             <CardItem
               src='images/Rocket-League.jpg'
-              text='View my current rank, 1vs1 and 2vs2 gameplay.'
+              text='View my current rank, 1vs1 and 2vs2 Gameplay.'
               label='Rocket League'
               path='/rocketleague'
             />
@@ -26,15 +26,15 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src='images/Call-of-Duty.jpg'
-              text='In game stats and gameplay.'
+              text='In-game stats and Gameplay.'
               label='Call of Duty Modern Warefare 3'
               path='/callofduty'
             />
             <CardItem
-              src='images/Fifa-23.jpg'
-              text='Ultimate Team and best goals'
-              label='Fifa 23'
-              path='/fifa'
+              src='images/Fifa24.jpg'
+              text='Ultimate Team and Best Goals.'
+              label='EAFC 24'
+              path='/eafc24'
             />
             <CardItem
               src='images/Elden-Ring.jpg'

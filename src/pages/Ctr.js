@@ -13,9 +13,7 @@ function Ctr() {
     images: {
       cover: "images/Crash-Team-Racing-Nitro-Fueled.jpg",
       gallery: [
-        { imageTitle: "", src: "images/Elden-Ring.jpg", alt: "" },
-        { imageTitle: "", src: "images/Crash-Team-Racing-Nitro-Fueled.jpg", alt: "" },
-        { imageTitle: "", src: "images/Rocket-League.jpg", alt: "" },
+        { imageTitle: "", src: "images/CTR_1.jpg", alt: "" },
       ]
     },
     videos: [

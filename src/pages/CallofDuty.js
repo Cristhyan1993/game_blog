@@ -8,7 +8,7 @@ import SwiperComponent from '../components/Swiper';
 
 function CallofDuty() {
   const callOfDutyDetails = {
-    title: "Call of Duty Modern Warefare 3",
+    title: "Call of Duty Modern Warefare III",
     images: {
       cover: "images/Call-of-Duty.jpg",
       gallery: [
@@ -20,7 +20,7 @@ function CallofDuty() {
       ]
     },
     videos: [
-      { videoTitle: "", url: "", description: "" },
+      { videoTitle: "Warzone Victories & Squad Wipes", url: "Cq4qSPEBb5w", description: "Montage of MW3 online gameplay" },
     ],
     heroText: "View my loadout & gameplay",
     gameReview: {
@@ -47,7 +47,7 @@ function CallofDuty() {
       <div className="main">
         <GameDetails gameDetails={callOfDutyDetails} />
         <SwiperComponent gameDetails={callOfDutyDetails} />
-        {/* <VideoCards cardDetails={callOfDutyCards} /> */}
+        <VideoCards cardDetails={callOfDutyDetails} />
       </div>
     </div>
   )
