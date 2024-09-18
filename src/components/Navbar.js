@@ -12,9 +12,8 @@ function Navbar() {
   return (
     <div className='navbar-container'>
       <nav>
-        <Link to="/" className="title">
-        my-Gmz
-        <i className="fa-solid fa-gamepad"/>
+        <Link to="/" className='title'>
+        <img src="images/my-GmzLogo.png" alt="website logo" className='logo'/>
         </Link>
         <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
           <span></span>

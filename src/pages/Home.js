@@ -10,6 +10,7 @@ function Home () {
         title: "my-Gmz",
         images:{cover:"/images/homepage.jpeg"},
         heroText: "Because Every Game Deserves a Great Review.",
+        logo: "images/my-GmzLogo.png"
       }
     return (
         <>
