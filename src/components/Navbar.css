@@ -8,7 +8,7 @@
   background-color: #0f172a;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 1;
 }
 
 nav {
@@ -22,13 +22,16 @@ nav {
 
 nav .title {
   display: flex;
-  font-size: 1.5rem;
   margin: 1rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: white;
+  height: 50px;
+  width: 200px;
 }
 
+.logo {
+  height: 100%;
+  width: 100%;
+  size: 100% 100%;
+}
 nav ul {
   display: flex;
 }
@@ -69,10 +72,27 @@ nav .menu span {
   border-radius: 0.2rem;
 }
 
+@media screen and (max-width: 1280px) {
+  nav {
+    width: 1000px
+  }
+}
+@media screen and (max-width: 1024px) {
+  nav {
+    width: 750px
+  }
+}
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   nav .menu {
       display: flex;
+  }
+
+  nav .title {
+    display: flex;
+    margin: 1rem;
+    height: 30px;
+    width: 150px;
   }
 
   nav {
@@ -102,15 +122,3 @@ nav .menu span {
       margin: 0.2rem 0.5rem;
   }
 }
-
-@media screen and (max-width: 1280px) {
-  nav {
-    width: 1000px
-  }
-}
-@media screen and (max-width: 1024px) {
-  nav {
-    width: 750px
-  }
-}
-
