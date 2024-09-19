@@ -1,0 +1,35 @@
+.text > h3 {
+    margin-bottom: 10px;
+}
+.aboutme-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutme-part1 {
+    display: flex;
+    width: 100%;
+}
+
+#aboutme-social-icon {
+    color: black;
+  }
+
+.aboutme-part1 > img {
+    height: 250px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 960px) {
+    
+  }
+
+  @media screen and (max-width: 640px) {
+    .aboutme-part1 {
+        flex-direction: column;
+    }
+    .aboutme-part1 > img {
+        text-align: center;
+        padding: 0px 60px;
+    }
+  }

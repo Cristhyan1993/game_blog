@@ -121,15 +121,16 @@
   }
   
   .social-logo {
-    color: #fff;
     justify-self: start;
-    margin-left: 20px;
     cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
     display: flex;
     align-items: center;
-    margin-bottom: 16px;
+    /* margin-left: 20px;
+    margin-bottom: 16px; */
+  }
+
+  .social-logo > img {
+    height: 30px;
   }
 
   .fa-gamepad {
@@ -168,6 +169,11 @@
     
     .social-media-wrap {
         flex-direction: column;
+    }
+
+    .social-logo > img {
+      height: 20px;
+      margin-bottom: 10px;
     }
   }
   

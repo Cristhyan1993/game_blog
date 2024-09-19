@@ -4,12 +4,12 @@ import AboutMeComponent from '../components/AboutMeComponent'
 
 
 export default function AboutMe() {
-    const homeDetails = {
+    const homeDetails = { 
         title: "my-Gmz",
-        images: { cover: "/images/homepage.jpeg" },
+        images:{cover:"/images/homepage.jpeg"},
         heroText: "Because Every Game Deserves a Great Review.",
-        overview: ""
-    }
+        logo: "images/my-GmzLogo.png"
+      }
     return (
         <>
             <HeroSection gameDetails={homeDetails} />
