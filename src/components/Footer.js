@@ -48,8 +48,7 @@ function Footer() {
         <div className='social-media-wrap'>
           <div className='footer-logo'>
             <Link to='/' className='social-logo'>
-              my-Gmz
-              <i className="fa-solid fa-gamepad"></i>
+              <img src="images/my-GmzLogo.png" alt="website logo"/>
             </Link>
           </div>
           <small className='website-rights'>my-Gmz © 2023</small>
