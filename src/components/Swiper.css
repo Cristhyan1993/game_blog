@@ -9,6 +9,7 @@
   width: 1000px;
   height: 500px;
   padding: 10px;
+  z-index: 0;
 }
 
 .swiper-item > img {

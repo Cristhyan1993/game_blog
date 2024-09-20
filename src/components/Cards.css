@@ -10,7 +10,7 @@
 .cards > h1,
 .cards > h2 {
   text-align: center;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .cards__container {
@@ -67,6 +67,7 @@
   position: absolute;
   bottom: 0;
   margin-left: 10px;
+  margin-right: 10px;
   padding: 6px 8px;
   max-width: calc((100%) - 60px);
   font-size: 12px;
@@ -74,6 +75,9 @@
   color: #fff;
   background-color: #1f98f4;
   box-sizing: border-box;
+  border-radius: 5px 5px 0px 0px;
+  min-width: fit-content;
+  max-width: 100%;
 }
 
 .cards__item__img {
@@ -111,14 +115,9 @@
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .cards__items {
     display: flex;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .cards__item {
     margin-bottom: 2rem;
   }
 }

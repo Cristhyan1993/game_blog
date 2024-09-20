@@ -51,7 +51,7 @@ function Footer() {
               <img src="images/my-GmzLogo.png" alt="website logo"/>
             </Link>
           </div>
-          <small className='website-rights'>my-Gmz © 2023</small>
+          <small className='website-rights'>my-Gmz © 2024</small>
           <div className='social-icons'>
             <Link
               className='social-icon-link facebook'
