@@ -38,6 +38,7 @@ function EldenRing() {
         score: 9
       }
     },
+    reviewDate: "18/09/2024",
   }
   
   return (

@@ -24,6 +24,16 @@
   font-size: 18px;
 }
 
+.heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.heading > p {
+  min-width: fit-content;
+}
+
 .ratings-container {
   display: flex;
   justify-content:space-around;

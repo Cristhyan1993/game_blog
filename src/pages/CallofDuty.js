@@ -37,6 +37,7 @@ function CallofDuty() {
         score: 8
       }
     },
+    reviewDate: "18/09/2024",
   }
 
   return (
@@ -47,7 +48,7 @@ function CallofDuty() {
       <div className="main">
         <GameDetails gameDetails={callOfDutyDetails} />
         <SwiperComponent gameDetails={callOfDutyDetails} />
-        {/* <VideoCards cardDetails={callOfDutyDetails} /> */}
+        <VideoCards cardDetails={callOfDutyDetails} />
       </div>
     </div>
   )

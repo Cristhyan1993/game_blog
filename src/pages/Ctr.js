@@ -37,6 +37,7 @@ function Ctr() {
         score: 8
       }
     },
+    reviewDate: "18/09/2024",
   }
 
   return (

@@ -7,7 +7,10 @@ import './GameDetails.css'
 function GameDetails(props) {
   return (
     <div className='game-details'>
-      <h1>{props.gameDetails.title}</h1>
+      <div className='heading'>
+        <h1>{props.gameDetails.title}</h1>
+        <p>Date Reviewed: {props.gameDetails.reviewDate}</p>
+      </div>
       <h3>Platform: <FontAwesomeIcon icon={faPlaystation} /></h3>
       <h2>Game Overview:</h2>
       <p>{props.gameDetails.gameReview.gameOverview}</p>
@@ -24,11 +27,11 @@ function GameDetails(props) {
       <div className='ratings-container'>
         <div className='ratings-item'>
           <h2>My Score:</h2>
-          <p>{props.gameDetails.gameReview.conclusion.score}/10 <i className="fa-solid fa-star star"/></p>
+          <p>{props.gameDetails.gameReview.conclusion.score}/10 <i className="fa-solid fa-star star" /></p>
         </div>
         <div className='ratings-item'>
           <h2>Difficulty rating:</h2>
-          <p>{props.gameDetails.gameReview.difficulty.rating}/10 <i className="fa-solid fa-fire fire"/></p>
+          <p>{props.gameDetails.gameReview.difficulty.rating}/10 <i className="fa-solid fa-fire fire" /></p>
         </div>
       </div>
     </div>
