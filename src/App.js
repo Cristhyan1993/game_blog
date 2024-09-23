@@ -23,20 +23,19 @@ import 'swiper/css/navigation';
 function App() {
   return (
     <>
-    <Router>
-      <Navbar/>
-      <Routes>
-      <Route path='/' exact element={ <Home />}/>
-      <Route path='/aboutme' exact element={ <AboutMe />}/>
-      <Route path='/ctr' exact element={ <Ctr />}/>
-      <Route path='/rocketleague' exact element={ <RocketLeague />}/>
-      <Route path='/callofduty' exact element={ <CallofDuty />}/>
-      <Route path='/eafc24' exact element={ <Fifa />}/>
-      <Route path='/eldenring' exact element={ <EldenRing />}/>
-      {/* <Route path='/sign-up' exact element={ <SignUp />}/> */}
-      </Routes>
-      <Footer/>
-    </Router>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path='/' exact element={<Home />} />
+          <Route path='/aboutme' exact element={<AboutMe />} />
+          <Route path='/ctr' exact element={<Ctr />} />
+          <Route path='/rocketleague' exact element={<RocketLeague />} />
+          <Route path='/callofduty' exact element={<CallofDuty />} />
+          <Route path='/eafc24' exact element={<Fifa />} />
+          <Route path='/eldenring' exact element={<EldenRing />} />
+        </Routes>
+        <Footer />
+      </Router>
     </>
   );
 }

@@ -1,9 +1,14 @@
 import React from 'react'
 import HeroSection from '../components/HeroSection'
 import AboutMeComponent from '../components/AboutMeComponent'
+import { useEffect } from 'react'
 
 
 export default function AboutMe() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, []
+      )
     const homeDetails = { 
         title: "my-Gmz",
         images:{cover:"/images/homepage.jpeg"},

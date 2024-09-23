@@ -5,9 +5,14 @@ import GameDetails from "../components/GameDetails";
 import VideoCards from "../components/VideoCards";
 import SwiperComponent from "../components/Swiper";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 
 function Ctr() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []
+  )
   const ctrDetails = {
     title: "Crash Team Racing Nitro fueled",
     images: {

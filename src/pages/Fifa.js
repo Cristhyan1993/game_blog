@@ -4,9 +4,14 @@ import HeroSection from '../components/HeroSection'
 import GameDetails from '../components/GameDetails'
 import VideoCards from "../components/VideoCards";
 import SwiperComponent from '../components/Swiper';
+import { useEffect } from 'react';
 
 
 function Fifa() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []
+  )
   const fifaDetails = {
     title: "EAFC 24",
     images: {
@@ -23,7 +28,7 @@ function Fifa() {
     ],
     heroText: "Ultimate team",
     gameReview: {
-      gameOverview:"EA Sports FC 24 marks a significant evolution in the long-standing football simulation franchise, transitioning from the iconic FIFA branding to a new identity under EA Sports FC. This installment continues the tradition of delivering realistic football gameplay while introducing fresh features and innovations.",
+      gameOverview: "EA Sports FC 24 marks a significant evolution in the long-standing football simulation franchise, transitioning from the iconic FIFA branding to a new identity under EA Sports FC. This installment continues the tradition of delivering realistic football gameplay while introducing fresh features and innovations.",
       gameplay: "EA Sports FC 24 continues to captivate with its thrilling and immersive gameplay, blending team-building strategy with competitive action. The revamped chemistry system introduces more flexibility and depth, allowing players to experiment with various formations and strategies without being constrained by traditional chemistry links. Ultimate Team now offers enhanced customization options for kits and stadiums, enabling players to personalize their home ground, adding a distinctive touch to their team's identity. A major highlight this year is the inclusion of women players in Ultimate Team, who can now be integrated into squads. This addition enriches squad-building options and brings greater diversity to team compositions. However, the sheer volume of special player cards can be overwhelming, with frequent events pushing players to buy packs. While this year has seen a slight increase in the likelihood of obtaining icons like Rivaldo and Stoichkov, top-tier icons such as R9 and Henry remain elusive without substantial spending or daily gameplay. The reduction in Weekend League matches to 20 has made it more manageable without sacrificing your entire weekend. Additionally, while higher-rated players seem more accessible due to the abundance of packs, many items are untradeable, limiting their utility.",
       controls: 'The control mechanics in EA Sports FC 24 are largely consistent with FIFA 23, but with several notable enhancements. New skill move combinations and the Adaptive Defensive Stance feature add layers of tactical depth, allowing players to manually control those without the ball for improved offensive positioning. These additions contribute to a more nuanced and responsive control experience.',
       difficulty: {

@@ -3,9 +3,15 @@ import HeroSection from '../components/HeroSection'
 import GameDetails from '../components/GameDetails'
 import VideoCards from "../components/VideoCards";
 import SwiperComponent from '../components/Swiper';
+import { useEffect } from 'react';
 
 
 function RocketLeague() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+    console.log("scroll is working")
+  }, []
+  )
   const rocketLeagueDetails = { 
     title: "Rocket League",
     images: {
