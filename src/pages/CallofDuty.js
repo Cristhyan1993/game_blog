@@ -4,9 +4,14 @@ import HeroSection from '../components/HeroSection'
 import GameDetails from '../components/GameDetails'
 import VideoCards from "../components/VideoCards";
 import SwiperComponent from '../components/Swiper';
+import { useEffect } from 'react';
 
 
 function CallofDuty() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []
+  )
   const callOfDutyDetails = {
     title: "Call of Duty Modern Warefare III",
     images: {
