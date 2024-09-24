@@ -1,0 +1,54 @@
+.gameList-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  max-width: 1120px;
+  width: 90%;
+  margin: 0 auto;
+}
+.grid-container {
+  width: 100%;
+  display: grid;
+  background-color: aliceblue;
+  grid-template-columns: auto auto auto;
+  grid-gap: 1em;
+  padding: 1em;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 10px;
+  width: auto;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.platforms {
+  display: flex;
+  flex-direction: row;
+}
+
+.platform-icon {
+  padding: 2px;
+}
+
+.description-top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card-container > img {
+  height: 150px;
+}
+
+.genre {
+  display: flex;
+  align-items: baseline;
+}
+
+.genre > h3 {
+  margin-left: 5px;
+}
