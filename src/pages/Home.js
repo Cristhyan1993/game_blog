@@ -4,23 +4,25 @@ import HeroSection from '../components/HeroSection'
 import Cards from '../components/Cards';
 import LandingText from '../components/LandingText';
 import MoreGames from '../components/MoreGames';
+import GameList from '../components/GameList';
 
-function Home () {
-    const homeDetails = { 
+function Home() {
+    const homeDetails = {
         title: "my-Gmz",
-        images:{cover:"/images/homepage.jpeg"},
+        images: { cover: "/images/homepage.jpeg" },
         heroText: "Because Every Game Deserves a Great Review.",
         logo: "images/my-GmzLogo.png"
-      }
+    }
     return (
         <>
-            <HeroSection gameDetails={homeDetails}/>
+            <HeroSection gameDetails={homeDetails} />
             <div className='main'>
-               <LandingText/>
-            <Cards/>  
-               <MoreGames/>
+                <LandingText />
+                <GameList />
+                <Cards />
+                <MoreGames />
             </div>
-           
+
         </>
     )
 }
