@@ -24,9 +24,7 @@ const GameListCard = ({ game }) => {
                 <h3 id='title'>Genre:</h3>
                 {game.genres.map((genre, genreIndex) => {
                     return (
-
                         <h3 key={genreIndex}>{genre.name}</h3>
-
                     )
                 })}
             </div>
