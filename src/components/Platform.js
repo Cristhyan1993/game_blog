@@ -5,7 +5,7 @@ import { faPlaystation, faXbox, faSteam } from '@fortawesome/free-brands-svg-ico
 const Platform = ({platformName}) => {
     console.log("platform Nameeeee", platformName)
     const platform = () => {
-        let result = "Samsung"
+        let result = ""
         if(platformName === "PlayStation" || platformName === "PlayStation 2" || platformName === "PlayStation 3" || platformName === "PlayStation 4" || platformName === "PlayStation 5") {
             result = <FontAwesomeIcon icon={faPlaystation}/>
         } else if(platformName === "Xbox" || platformName === "Xbox 360" || platformName === "Xbox Series S/X" || platformName === "Xbox One" ) {
