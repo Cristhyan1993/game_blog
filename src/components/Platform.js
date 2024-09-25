@@ -13,7 +13,7 @@ const Platform = ({platformName}) => {
         } else if(platformName === "PC") {
             result = <FontAwesomeIcon icon={faSteam}/>
         } else if(platformName === "Nintendo Switch") {
-            result = "Nintendo"
+            result = "Switch"
         } else if(platformName === "Game Boy Advance") {
             return "GBA"
         } else {
