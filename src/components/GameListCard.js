@@ -1,18 +1,23 @@
 import React from 'react'
 import "./GameList.css"
 import Platform from './Platform'
+import { Link } from 'react-router-dom'
 
 const GameListCard = ({ game }) => {
+    function handleClick() {
+        console.log(game.id)
+    }
 
     return (
         <div className='card-container'>
-            <h2>{game.name}</h2>
+        <Link to={`/${game.id}`} onClick={()=> console.log(game.id)} className='links'>
+            <h2>{game.name}</h2></Link>
             <h3>{game.released}</h3>
             <img src={game.background_image} alt="background of game" />
 
             <div className='description-top'>
                 <div className='platforms'>
-                    {game.platforms.map((gamePlatform, platform_index) => {
+                    {game.parent_platforms.map((gamePlatform, platform_index) => {
                         return (
                             <Platform key={platform_index} platformName={gamePlatform.platform.name} />
                         )
@@ -28,6 +33,7 @@ const GameListCard = ({ game }) => {
                     )
                 })}
             </div>
+            
         </div>
 
     )

@@ -4,10 +4,12 @@ import CardItem from './CardItem';
 
 function Cards() {
   return (
-    <div className='cards' id='cards'>
-      <h1>Check out some of my favourite games!</h1>
-      <h2>Click on a game to view gameplay and other info. </h2>
+    <div className='component-container' id='cards'>
       <div className='cards__container'>
+      <div className='text-container center-text'>
+      <h1>Check out some of my favourite games!</h1>
+      <h2>Click on a game to view gameplay and other info. </h2>  
+      </div>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem

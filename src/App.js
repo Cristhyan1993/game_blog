@@ -12,6 +12,7 @@ import RocketLeague from './pages/RocketLeague';
 import CallofDuty from './pages/CallofDuty';
 import Fifa from './pages/Fifa';
 import EldenRing from './pages/EldenRing';
+import DynamicGame from './pages/DynamicGame';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path='/callofduty' exact element={<CallofDuty />} />
           <Route path='/eafc24' exact element={<Fifa />} />
           <Route path='/eldenring' exact element={<EldenRing />} />
+          <Route path='/:gameId' exact element={<DynamicGame/>}/>
         </Routes>
         <Footer />
       </Router>
