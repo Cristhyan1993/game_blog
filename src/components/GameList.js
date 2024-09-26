@@ -40,27 +40,29 @@ const GameList = () => {
     useEffect(() => {
         getGames()
     }, [])
-    return (<>
-        <div className='text-container'>
-                <h1>Game List</h1>
-                <p>Currently displaying top-rated PlayStation games ranked by Metacritic scores. Use the search bar to find your favorites, and click to discover more details, including screenshots, trailers, description and additional content.</p>
+    return (
+        <div className='component-container' id='gameList'>
+            <div className='gameList-container'>
+                <div className='text-container center-text'>
+                    <h1>Game List</h1>
+                    <h2>Currently displaying top-rated PlayStation games ranked by Metacritic scores. Use the search bar to find your favourites, and click to discover more details, including screenshots, description and additional content. Happy searching!</h2>
+                </div>
+                <div className='search-bar'>
+                    <form onSubmit={getGamesByTitle}>
+                        <input type='text' value={userInput} placeholder="Search..." onChange={(e) => setUserInput(e.target.value)}>
+                        </input>
+                        <i class="fa-solid fa-magnifying-glass" type="submit" onClick={getGamesByTitle} />
+                    </form>
+                </div>
+                <div className='grid-container'>
+                    {games.map((game, index) => {
+                        return (
+                            <GameListCard game={game} key={index} />
+                        )
+                    })}
+                </div>
             </div>
-        <div className='gameList-container'>
-            <div className='search-bar'>
-                <form onSubmit={getGamesByTitle}>
-                    <input type='text' value={userInput} placeholder="Search..." onChange={(e) => setUserInput(e.target.value)}></input>
-                  
-                    <i class="fa-solid fa-magnifying-glass" type="submit" onClick={getGamesByTitle}></i>
-                </form>
-            </div>
-            <div className='grid-container'>
-                {games.map((game, index) => {
-                    return (
-                        <GameListCard game={game} key={index} />
-                    )
-                })}
-            </div>
-        </div></>
+        </div>
     )
 }
 

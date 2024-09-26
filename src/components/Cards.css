@@ -1,40 +1,30 @@
-.cards {
-  padding: 1rem;
-  background: #fff;
-}
-
 .cards > h1 {
   color: rgb(22, 59, 123);
   font-weight: 400;
-}
-.cards > h1,
-.cards > h2 {
-  text-align: center;
-  padding-bottom: 1rem;
 }
 
 .cards__container {
   display: flex;
   flex-flow: column;
   align-items: center;
-  max-width: 1120px;
-  width: 90%;
+  /* max-width: 1120px; */
+  width: 100%;
   margin: 0 auto;
 }
 
 .cards__wrapper {
   position: relative;
-  margin: 50px 0 45px;
+  background: #b5e1e3;
 }
 
 .cards__items {
-  margin-bottom: 24px;
+  gap: 10px
 }
 
 .cards__item {
   display: flex;
   flex: 1;
-  margin: 0 1rem;
+  padding: 1rem;
   border-radius: 10px;
 }
 
@@ -118,6 +108,5 @@
 @media only screen and (min-width: 768px) {
   .cards__items {
     display: flex;
-    margin-bottom: 2rem;
   }
 }

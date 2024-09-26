@@ -25,10 +25,8 @@ function NavBar() {
       <nav className="navbar">
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
-
             <img src="images/my-GmzLogo.png" alt="website logo" />
           </NavLink>
-
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <NavLink
@@ -69,7 +67,7 @@ function NavBar() {
                 scroll={el => scrollWithOffset(el, 80)}
                 onClick={handleClick}
               >
-                Games
+                Favourite Games
               </HashLink>
             </li>
 
