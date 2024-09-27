@@ -7,64 +7,22 @@
   justify-content: center;
   align-items: center;
   object-fit: contain;
+  position: relative;
 }
 
-.background-image {
-  background-image: url("../../public/images/Controller-Background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100%;
+.hero-image {
   width: 100%;
-  background-size: 1280px 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* opacity: 0.9; */
-}
-
-.hero-content-homepage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.hero-content-gamepage {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   max-width: 1280px;
   height: 100%;
-  flex: 1;
-  padding: 0px 50px;
-  background-color: #060606;
-  /* opacity: 0.8; */
+  opacity: 0.7;
 }
 
-.hero-content-gamepage-left {
-    flex: 2;
-  }
-
-.hero-content-gamepage-right {
-  height: 250px;
-  width: 450px;
-  size: 200px 300px;
-  border-radius: 10px;
-  flex:1;
-}
-
-.hero-content-gamepage-right > img {
-  height: 100%;
-  width: 100%;
-  border-radius: 5px;
-}
-
-.title {
+.hero-title {
   color: white;
-}
-
-.subText {
-  color: white;
-  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 
@@ -75,30 +33,12 @@
 }
 
 @media screen and (max-width: 960px) {
-  .background-image {
-    width: 100vw;
-    background-size: 100vw 100%;
-  }
 
-  .hero-content-gamepage-right {
-    height: 140px;
-    width: 180px;
-  }
 }
 
 @media screen and (max-width: 768px) {
-
-  .hero-content-homepage > img {
+  #image-logo {
     height: 80px;
     width: 300px;
-  }
-
-  .hero-content-gamepage {
-    padding: 0px 20px;
-  }
-
-  .hero-content-gamepage-right {
-    height: 140px;
-    width: 180px;
   }
 }
