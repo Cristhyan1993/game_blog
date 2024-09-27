@@ -18,7 +18,7 @@ function Home() {
             <HeroSection gameDetails={homeDetails} />
             <div className='main'>
                 <LandingText />
-                <GameList />
+                {/* <GameList /> */}
                 <Cards />
                 <MoreGames />
             </div>

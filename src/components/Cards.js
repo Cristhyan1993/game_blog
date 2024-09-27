@@ -1,14 +1,23 @@
 import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPenToSquare, faStar, faVideo } from '@fortawesome/free-solid-svg-icons'
 
 function Cards() {
   return (
     <div className='component-container' id='cards'>
       <div className='cards__container'>
       <div className='text-container center-text'>
-      <h1>Check out some of my favourite games!</h1>
-      <h2>Click on a game to view gameplay and other info. </h2>  
+      <h1>Check out some of my <span className='span-word'>favourite</span> games!</h1>
+      <div className='icons-wrapper'>
+        <ul className='icons-container'>
+          <li className='list-item-vertical'><FontAwesomeIcon icon={faPenToSquare} className='icon'/>Review</li>
+          <li className='list-item-vertical'><FontAwesomeIcon icon ={faStar} className='icon'/>Score</li>
+          <li className='list-item-vertical'><FontAwesomeIcon icon ={faVideo} className='icon'/>Gameplay</li>
+        </ul>
+      </div>
+      <h2>Dive into my world of gaming by selecting a game below to check out my <span className='span-word'>latest reviews</span> and other info.</h2>  
       </div>
         <div className='cards__wrapper'>
           <ul className='cards__items'>

@@ -27,7 +27,7 @@ function App() {
           <Route path='/callofduty' exact element={<CallofDuty />} />
           <Route path='/eafc24' exact element={<Fifa />} />
           <Route path='/eldenring' exact element={<EldenRing />} />
-          <Route path='/:gameId' exact element={<DynamicGame/>}/>
+          <Route path='/games/:gameId' exact element={<DynamicGame/>}/>
         </Routes>
         <Footer />
       </Router>

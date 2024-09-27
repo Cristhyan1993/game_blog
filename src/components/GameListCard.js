@@ -4,13 +4,10 @@ import Platform from './Platform'
 import { Link } from 'react-router-dom'
 
 const GameListCard = ({ game }) => {
-    function handleClick() {
-        console.log(game.id)
-    }
 
     return (
         <div className='card-container'>
-        <Link to={`/${game.id}`} onClick={()=> console.log(game.id)} className='links'>
+        <Link to={`/games/${game.id}`} onClick={()=> console.log(game.id)} className='links'>
             <h2>{game.name}</h2></Link>
             <h3>{game.released}</h3>
             <img src={game.background_image} alt="background of game" />

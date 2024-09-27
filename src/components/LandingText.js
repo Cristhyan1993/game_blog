@@ -8,26 +8,26 @@ const LandingText = () => {
         <div className='component-container' id='landingText'>
             <div className='component-left'>
                 <div className='text-container'>
-                    <h1>What you'll find</h1>
+                    <h1>What you'll <span className="span-word">find</span></h1>
                     <h2>
                         Welcome to my-Gmz, your ultimate destination for honest, in-depth game reviews. Whether you're into action-packed adventures, immersive RPGs, or fast-paced esports, I've got it all covered.
                     </h2>
                     <ul>
                         <li className='list-item'>
                             <i class="fa-solid fa-gamepad" />
-                            Explore thrilling gameplay highlights
+                            <p>Explore thrilling gameplay highlights</p>
                         </li>
                         <li className='list-item'><FontAwesomeIcon icon={faGamepad} />
-                            Screenshots
+                            <p>Screenshots</p>
                         </li>
                         <li className='list-item'><FontAwesomeIcon icon={faGamepad} />
-                            My in-game stats
+                            <p>My in-game stats</p>
                         </li>
                         <li className='list-item'><FontAwesomeIcon icon={faGamepad} />
-                            Ultimate Team Squad
+                            <p>Ultimate Team Squad</p>
                         </li>
                         <li className='list-item'><FontAwesomeIcon icon={faGamepad} />
-                            Call of Duty loadouts
+                            <p>Call of Duty loadouts</p>
                         </li>
                     </ul>
                     <h2>
@@ -37,7 +37,7 @@ const LandingText = () => {
             </div>
             <div className='component-right'>
                 <div className='image-container'>
-                    <img src="/images/Controller-Console.png" alt="controller and console"/>
+                    <img src="/images/Controller-Console.png" alt="controller and console" id="controller-console-img" />
                 </div>
 
             </div>
