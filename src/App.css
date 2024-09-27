@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #c3e7e9;
+  background-color:aliceblue;
 }
 
 .component-container {
@@ -19,7 +19,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0 0.5rem;
-  padding: 4rem 1rem;
+  padding: 3rem 1rem;
   gap: 1rem;
 }
 
@@ -46,17 +46,22 @@
 
 #landingText,
 #cards {
-  background-color: #c3e7e9;
+  background-color: aliceblue;
 }
 
 #gameList,
 #moreGames {
-  background-color: #b5e1e3;
+  background-color: #c3e7e9;
 }
 
 @media screen and (max-width: 768px) {
   .component-container {
     flex-direction: column;
     padding: 1rem;
+  }
+
+  #controller-console-img {
+    max-height: 250px;
+    width: auto;
   }
 }

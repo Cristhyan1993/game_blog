@@ -14,7 +14,7 @@
 
 .cards__wrapper {
   position: relative;
-  background: #b5e1e3;
+  /* background-color:antiquewhite; */
 }
 
 .cards__items {
@@ -97,6 +97,22 @@
   color: #252e48;
   font-size: 18px;
   line-height: 24px;
+}
+
+.icons-wrapper {
+  margin: 20px;
+}
+
+.icons-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon {
+  font-size: 25px;
+  color: #1f98f4;
 }
 
 @media only screen and (min-width: 1200px) {
