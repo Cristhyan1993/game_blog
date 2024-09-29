@@ -11,7 +11,7 @@ export default function AboutMe() {
       )
     const homeDetails = { 
         title: "my-Gmz",
-        images:{cover:"/images/homepage.jpeg"},
+        images:{cover:"/images/Controller-Background.jpg"},
         heroText: "Because Every Game Deserves a Great Review.",
         logo: "images/my-GmzLogo.png"
       }

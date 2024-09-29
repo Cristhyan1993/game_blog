@@ -1,8 +1,8 @@
 .text > h3 {
     margin-bottom: 10px;
 }
-.aboutme-container {
-    display: flex;
+
+#flex-col{
     flex-direction: column;
 }
 

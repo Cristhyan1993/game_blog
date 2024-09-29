@@ -37,7 +37,7 @@ const LandingText = () => {
             </div>
             <div className='component-right'>
                 <div className='image-container'>
-                    <img src="/images/Controller-Console.png" alt="controller and console" id="controller-console-img" />
+                    <img src="/images/Controller-Console.png" alt="controller and console" id="mobile-img" />
                 </div>
 
             </div>
