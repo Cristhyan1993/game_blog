@@ -6,7 +6,7 @@ import { faGamepad } from '@fortawesome/free-solid-svg-icons'
 
 const MoreGames = () => {
     return (
-        <div className='component-container' id='moreGames'>
+        <div className='component-container wrap-reverse' id='moreGames'>
             <div className='component-left'>
                 <div className='image-container'>
                     <img src="/images/Yu-Gi-Oh-Wallpaper.jpg" alt="yugioh wallpaper" />

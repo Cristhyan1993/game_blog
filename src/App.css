@@ -42,6 +42,7 @@
   width: 100%;
   display: flex;
   align-items: center;
+  padding: 20px;
 }
 
 #landingText,
@@ -64,4 +65,8 @@
     max-height: 250px;
     width: auto;
   }
+
+  .wrap-reverse {
+    flex-direction: column-reverse;
+}
 }

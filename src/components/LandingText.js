@@ -12,6 +12,10 @@ const LandingText = () => {
                     <h2>
                         Welcome to my-Gmz, your ultimate destination for honest, in-depth game reviews. Whether you're into action-packed adventures, immersive RPGs, or fast-paced esports, I've got it all covered.
                     </h2>
+                    <h2>
+                        On this site, I share my honest thoughts, in-depth reviews, and insights on the latest (and classic) PlayStation games. I break down the gameplay, graphics, difficulty, and overall experience to help you decide what’s worth your time.
+                    </h2>
+
                     <ul>
                         <li className='list-item'>
                             <i class="fa-solid fa-gamepad" />

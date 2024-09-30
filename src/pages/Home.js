@@ -11,14 +11,15 @@ function Home() {
         title: "my-Gmz",
         images: { cover: "/images/Controller-Background.jpg" },
         heroText: "Because Every Game Deserves a Great Review.",
-        logo: "images/my-GmzLogo.png"
+        logo: "images/my-GmzLogo.png",
+        psnId:"diego-unchained-"
     }
     return (
         <>
             <HeroSection gameDetails={homeDetails} />
             <div className='main'>
                 <LandingText />
-                <GameList />
+                {/* <GameList /> */}
                 <Cards />
                 <MoreGames />
             </div>

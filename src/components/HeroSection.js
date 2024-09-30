@@ -1,6 +1,8 @@
 import React from "react";
 import './HeroSection.css'
 import { HashLink } from "react-router-hash-link";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlaystation } from '@fortawesome/free-brands-svg-icons'
 
 function HeroSection(props) {
   const scrollWithOffset = (el, offset) => {
@@ -29,6 +31,8 @@ function HeroSection(props) {
                 </span>
               </button>
             </HashLink>
+          <p>Add Me on PlayStation <FontAwesomeIcon icon={faPlaystation}/></p>
+            <h2>PSN Id: <span id="gold">Diego-Unchained-</span></h2>
           </div>
           :
           <div className="hero-context">
