@@ -30,6 +30,11 @@
   color: black;
 }
 
+.link-image {
+  height: 200px;
+  width: 100%;
+}
+
 .card-container > h2,
 .card-container > h3,
 .description-top > h3,

@@ -15,6 +15,10 @@
   color: black;
 }
 
+.aboutme-part1 {
+  display: flex;
+  gap: 20px;
+}
 .aboutme-part1 > img {
   height: 250px;
   margin: 10px;
