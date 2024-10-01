@@ -36,7 +36,8 @@
 
 .text-container > p, .text > p {
   font-size: 18px;
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .text-container > ul {

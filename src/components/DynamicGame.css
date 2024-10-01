@@ -1,0 +1,80 @@
+.dg-text-container {
+
+}
+
+.dg-text-container > h1 {
+    font-size: 120px;
+    line-height: 0.8;
+    font-family: "Bebas Neue", sans-serif;
+    color: #1f5156;
+}
+
+.rating-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px 0 10px 0;
+}
+
+.rating-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#exceptional {
+    color: green;
+}
+
+#recommended {
+    color: lime;
+}
+
+#meh {
+    color: orange;
+}
+
+#skip {
+    color: red;
+}
+
+.dg-text-component {
+    display: flex;
+}
+.dg-text-component-left {
+    flex:2;
+    padding-right: 20px;
+    border-right: 2px solid #1f5156;
+}
+
+.dg-text-component-right {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+}
+#screenshots {
+  align-items: flex-start;
+}
+
+.grid-container-images {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.grid-item-images {
+  
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container-images {
+    grid-template-columns: auto;
+  }
+
+  .dg-text-container > h1 {
+    font-size: 60px;
+}
+}

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import HeroSection from '../components/HeroSection';
 import "../components/Text.css"
+import "../components/DynamicGame.css"
+import '../App.css'
 const DynamicGame = () => {
     const [gameDetails, setGameDetails] = useState([]);
     const [gameScreenshots, setGameScreenshots] = useState([])
@@ -17,10 +18,11 @@ const DynamicGame = () => {
                 throw new Error("Network response was not ok");
             }
             const data = await response.json();
+            console.log(data)
             setGameDetails(data)
-        } catch(error) {
+        } catch (error) {
             console.log(error)
-        } 
+        }
     }
 
     async function getGameScreenshots() {
@@ -30,39 +32,80 @@ const DynamicGame = () => {
                 throw new Error("Network response was not ok");
             }
             const data = await response.json();
-            console.log(data)
+
             setGameScreenshots(data.results)
-        } catch(error) {
+        } catch (error) {
             console.log(error)
-        } 
+        }
     }
 
     useEffect(() => {
         window.scrollTo(0, 0)
         getGameDetails()
         getGameScreenshots()
-    },[])
-    return (<>
-        
-        <div className='main text-container'>
-            <h2>{gameDetails.name}</h2>
-            <p>{gameDetails.description}</p>
-            <h3>{gameDetails.metacritic}</h3>
-            <h3>{gameDetails.released}</h3>
-            <img src={gameDetails.background_image} alt="background of game" height="400px"/>
-            {/* this is an array. might need to change if there are multiple developers */}
-            {/* <h3>{gameDetails.developers[0].name}</h3> */}
-            <h3>Genre:</h3>
-        </div>
-        <div>
-            {gameScreenshots.map((screenshot, index) => {
-                return (
-                    <img src={screenshot.image} alt="screenshot of game" height="200px" key={index}/>
-                )
-            })}
-        </div>
-        </>
+    }, [])
 
+    return (
+        <div className='main'>
+            <div className='component-container'>
+                <div className='component-left' id='flex1'>
+                    <div className='dg-text-container'>
+                        <h1>{gameDetails.name}</h1>
+                        <div className='rating-container'>
+                            {gameDetails.ratings ? gameDetails.ratings.map((rating, ratingIndex) => {
+                                return (
+                                    <div key={ratingIndex} className='rating-item' id={rating.title}>
+                                        <h3>{rating.title}</h3>
+                                        <h2>{rating.count}</h2>
+                                    </div>
+                                )
+                            }) : "loading"}
+                            <div className='rating-item'>
+                                <h3>Metacritic</h3>
+                                <h2>{gameDetails.metacritic}</h2>
+                            </div>
+                        </div>
+                        <div className='dg-text-component'>
+                            <div className='dg-text-component-left'>
+                                <h4>Description:</h4>
+                                <p>{gameDetails.description_raw}</p>
+                            </div>
+                            <div className='dg-text-component-right'>
+                                <div className='rating-item'>
+                                    <h4>Release Date:</h4>
+                                    <p>{gameDetails.released}</p>
+                                </div>
+                                <div className='rating-item'>
+                                    <h4>Genre:</h4>
+                                    {gameDetails.genres ? gameDetails.genres.map((genre, genreIndex) => {
+                                        return (
+                                            <p key={genreIndex}>{genre.name}</p>
+                                        )
+                                    }) : "loading"}
+                                </div>
+                                <div className='rating-item'>
+                                    <h4>Developer:</h4>
+                                    {/* this is an array. might need to change if there are multiple developers */}
+                                    <p>{gameDetails.developers ? gameDetails.developers[0].name : "loading"}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='component-right' >
+                    <div className='image-container'>
+                        <img src={gameDetails.background_image} alt="background of game" />
+                    </div>
+                    <div className='grid-container-images'>
+                        {gameScreenshots.map((screenshot, index) => {
+                            return (
+                                <img src={screenshot.image} alt="screenshot of game" className='grid-item-images' key={index} />
+                            )
+                        })}
+                    </div>
+                </div>
+            </div>
+        </div>
     )
 }
 

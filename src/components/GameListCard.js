@@ -7,10 +7,13 @@ const GameListCard = ({ game }) => {
 
     return (
         <div className='card-container'>
-        <Link to={`/games/${game.id}`} onClick={()=> console.log(game.id)} className='links'>
+        <Link to={`/games/${game.id}`} className='links'>
             <h2>{game.name}</h2></Link>
             <h3>{game.released}</h3>
-            <img src={game.background_image} alt="background of game" />
+            <Link to={`/games/${game.id}`}>
+            <img src={game.background_image} alt="background of game" className='link-image'/>    
+            </Link>
+            
 
             <div className='description-top'>
                 <div className='platforms'>
