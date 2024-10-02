@@ -18,7 +18,6 @@ const DynamicGame = () => {
                 throw new Error("Network response was not ok");
             }
             const data = await response.json();
-            console.log(data)
             setGameDetails(data)
         } catch (error) {
             console.log(error)
@@ -87,6 +86,15 @@ const DynamicGame = () => {
                                     <h4>Developer:</h4>
                                     {/* this is an array. might need to change if there are multiple developers */}
                                     <p>{gameDetails.developers ? gameDetails.developers[0].name : "loading"}</p>
+                                </div>
+                                <div className='rating-item'>
+                                    <h4>Platforms:</h4>
+                                    <p>{gameDetails.parent_platforms ? gameDetails.parent_platforms[0].name : "loading"}</p>
+                                    {gameDetails.parent_platforms ? gameDetails.parent_platforms.map((platform, platformIndex) => {
+                                        return (
+                                            <p key={platformIndex}>{platform.platform.name}</p>
+                                        )
+                                    }) : "loading"}
                                 </div>
                             </div>
                         </div>

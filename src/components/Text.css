@@ -133,9 +133,9 @@
     font-size: 14px;
   }
 
-  .text-container > p, .text > p {
+  /* .text-container > p, .text > p {
     font-size: 12px;
-  }
+  } */
 
   p {
     font-size: 15px;
