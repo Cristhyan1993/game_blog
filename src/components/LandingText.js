@@ -18,7 +18,7 @@ const LandingText = () => {
 
                     <ul>
                         <li className='list-item'>
-                            <i class="fa-solid fa-gamepad" />
+                            <i className="fa-solid fa-gamepad" />
                             <p>Explore thrilling gameplay highlights</p>
                         </li>
                         <li className='list-item'><FontAwesomeIcon icon={faGamepad} />

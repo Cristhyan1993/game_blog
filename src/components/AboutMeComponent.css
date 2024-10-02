@@ -1,3 +1,10 @@
+.text > h1 {
+  font-size: 120px;
+  line-height: 0.8;
+  font-family: "Bebas Neue", sans-serif;
+  color: #1f5156;
+}
+
 .text > h3 {
   margin-bottom: 10px;
 }
@@ -27,7 +34,7 @@
 .three-games {
   display: flex;
   justify-content: space-between;
-  background-color: #1f5156;
+  background-color: #2B7278;
   padding: 0 10px;
   border: 1px solid blue;
   border-radius: 5px;
@@ -38,7 +45,7 @@
   color: white;
 }
 .game-item > h3 {
-  color: grey;
+  color: rgb(162, 162, 162);
 }
 
 #bold {
@@ -49,6 +56,10 @@
 }
 
 @media screen and (max-width: 640px) {
+  .text > h1 {
+    font-size: 60px;
+  }
+
   .aboutme-part1 {
     flex-direction: column;
   }

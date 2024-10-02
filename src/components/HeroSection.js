@@ -25,8 +25,8 @@ function HeroSection(props) {
               to="/#cards"
               scroll={el => scrollWithOffset(el, 80)}
             >
-              <button class="pushable">
-                <span class="front">
+              <button className="pushable">
+                <span className="front">
                   Favourite Games
                 </span>
               </button>
