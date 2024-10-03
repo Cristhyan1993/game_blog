@@ -19,7 +19,8 @@ function HeroSection(props) {
         <img src={props.gameDetails.images.cover} alt="game wallpaper" className="hero-image" />
         {props.gameDetails.logo ?
           <div className="hero-context">
-            <h1>Gameplay & Honest Reviews</h1>
+            <h1>Gameplay &</h1>
+            <h1>Honest Reviews</h1>
             <h2>{props.gameDetails.heroText}</h2>
             <HashLink
               to="/#cards"

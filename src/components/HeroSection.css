@@ -27,7 +27,7 @@
 .hero-context {
   color: white;
   position: absolute;
-  top: 220px;
+  top: 180px;
   left: 3rem;
   display: flex;
   flex-direction: column;
@@ -35,9 +35,10 @@
 }
 
 .hero-context > h1 {
-  font-size: 65px;
+  font-size: 90px;
   font-family: "Bebas Neue", sans-serif;
-  color: gold;
+  color: white;
+  line-height: 70px;
 }
 
 #gold{
@@ -94,6 +95,7 @@
   }
 
   .hero-context > h1 {
-    font-size: 35px;
+    font-size: 60px;
+    line-height: 40px;
   }
 }
