@@ -1,26 +1,57 @@
 import React from 'react';
-import './Cards.css';
 import CardItem from './CardItem';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPenToSquare, faStar, faVideo } from '@fortawesome/free-solid-svg-icons'
+import RateReviewIcon from '@mui/icons-material/RateReview';
+import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
+import StarIcon from '@mui/icons-material/Star';
+import { Box, Typography, styled, useTheme } from '@mui/material';
+// import IconBox from '../customizedComponents/IconBox.tsx';
+
+
+const IconBox = styled(Box)(({ theme }) => ({
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  borderRadius: "0.5rem",
+  gap: "0.5rem",
+  padding: "1rem",
+  minWidth: "150px",
+  backgroundColor: theme.palette.secondary.light,
+  boxShadow: "0.15rem 0.2rem 0.15rem 0.1rem rgba(0, 0, 0, .8)"
+}));
 
 function Cards() {
+  const { palette } = useTheme();
   return (
-    <div className='component-container' id='cards'>
-      <div className='cards__container'>
-      <div className='text-container center-text'>
-      <h1>Check out some of my <span className='span-word'>favourite</span> games!</h1>
-      <div className='icons-wrapper'>
-        <ul className='icons-container'>
-          <li className='list-item-vertical'><FontAwesomeIcon icon={faPenToSquare} className='icon'/>Review</li>
-          <li className='list-item-vertical'><FontAwesomeIcon icon ={faStar} className='icon'/>Score</li>
-          <li className='list-item-vertical'><FontAwesomeIcon icon ={faVideo} className='icon'/>Gameplay</li>
-        </ul>
-      </div>
-      <h2>Dive into my world of gaming by selecting a game below to check out my <span className='span-word'>latest reviews</span> and other info.</h2>  
-      </div>
-        <div className='cards__wrapper'>
-          <ul className='cards__items'>
+    <div className='component-container' id="cards">
+      <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", width: "100%" }}>
+        <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", width: "100%", gap: "1.5rem", textAlign: "center" }}>
+          <Typography variant='h3'
+            sx={{
+              textTransform: "uppercase",
+              background: `linear-gradient(90deg, ${palette.primary.light}, ${palette.secondary.dark}, ${palette.primary.light})`,
+              backgroundClip: "text",
+              webkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              textAlign: "center"
+            }}>Check out some of my favourite games!</Typography>
+          <Box sx={{ display: "flex", gap:"20px", maxWidth: "500px",  justifyContent: "space-around", flexWrap: "wrap"}}>
+            <IconBox>
+              <RateReviewIcon fontSize='large' />
+              <Typography variant='h6' sx={{textTransform: "uppercase"}}>Review</Typography>
+            </IconBox>
+            <IconBox sx={{ backgroundColor: "secondary.main" }}>
+              <StarIcon fontSize='large' />
+              <Typography variant="h6" sx={{textTransform: "uppercase"}}>Score</Typography>
+            </IconBox>
+            <IconBox sx={{ backgroundColor: "secondary.dark" }}>
+              <VideoLibraryIcon fontSize='large' />
+              <Typography variant='h6' sx={{textTransform: "uppercase"}}>Gameplay</Typography>
+            </IconBox>
+          </Box>
+          <Typography variant='h6'>Dive into my world of gaming by selecting a game below to check out my <Typography variant='h6' color="primary.dark" display="inline">latest reviews</Typography> and other info.</Typography>
+        </Box>
+        <Box sx={{ position: "relative", marginTop: "100px" }}>
+          <Box sx={{ display: "flex", gap: "10px", flexDirection: {xs:"column", md:"row"} }}>
             <CardItem
               src='images/Crash-Team-Racing-Nitro-Fueled.jpg'
               text='Developer Time Trials.'
@@ -33,8 +64,8 @@ function Cards() {
               label='Rocket League'
               path='/rocketleague'
             />
-          </ul>
-          <ul className='cards__items'>
+          </Box>
+          <Box sx={{ display: "flex", gap: "10px", flexDirection: {xs:"column", md:"row"}}}>
             <CardItem
               src='images/Call-of-Duty.jpg'
               text='In-game stats and Gameplay.'
@@ -53,9 +84,9 @@ function Cards() {
               label='Elden Ring'
               path='/eldenring'
             />
-          </ul>
-        </div>
-      </div>
+          </Box>
+        </Box>
+      </Box>
     </div>
   );
 }

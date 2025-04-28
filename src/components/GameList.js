@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import GameListCard from './GameListCard'
-import "./GameList.css"
+import { Box, IconButton, Paper, Typography } from '@mui/material';
+import SearchIcon from '@mui/icons-material/Search';
+import InputBase from '@mui/material/InputBase';
+
+
 
 const GameList = () => {
     const [games, setGames] = useState([]);
@@ -40,27 +44,36 @@ const GameList = () => {
         getGames()
     }, [])
     return (
-        <div className='component-container' id='gameList'>
-            <div className='gameList-container'>
-                <div className='text-container center-text'>
-                    <h1>Game List</h1>
-                    <h2>Currently displaying top-rated PlayStation 5 games ranked by Metacritic scores. Use the search bar to find your favourites, and click to discover more details, including screenshots, description and additional content. Happy searching!</h2>
-                </div>
-                <div className='search-bar'>
+        <div className='component-container'>
+            <Box textAlign="center" display="flex" flexDirection="column" alignItems="center" gap={5}>
+                <Box display="flex" flexDirection="inherit" gap={3}>
+                    <Typography variant='h3'>Game List</Typography>
+                    <Typography variant='h6'>Currently displaying top-rated PlayStation 5 games ranked by Metacritic scores. Use the search bar to find your favourites, and click to discover more details, including screenshots, description and additional content. Happy searching!</Typography>
+                </Box>
+                <Box>
                     <form onSubmit={getGamesByTitle}>
-                        <input type='text' value={userInput} placeholder="Search..." onChange={(e) => setUserInput(e.target.value)}>
-                        </input>
-                        <i className="fa-solid fa-magnifying-glass" type="submit" onClick={getGamesByTitle} />
+                        <Paper
+                            component="form"
+                            sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 300 }}
+                        >
+                            <InputBase
+                                sx={{ ml: 1, flex: 1 }}
+                                value={userInput} placeholder="Search..." onChange={(e) => setUserInput(e.target.value)}
+                            />
+                            <IconButton type="submit" onClick={getGamesByTitle} sx={{ p: '10px' }} aria-label="search">
+                                <SearchIcon />
+                            </IconButton>
+                        </Paper>
                     </form>
-                </div>
-                <div className='grid-container'>
+                </Box>
+                <Box display="flex" flexWrap="wrap" justifyContent="center" gap={2}>
                     {games.map((game, index) => {
                         return (
                             <GameListCard game={game} key={index} />
                         )
                     })}
-                </div>
-            </div>
+                </Box>
+            </Box>
         </div>
     )
 }

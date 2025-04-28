@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlaystation, faXbox, faSteam } from '@fortawesome/free-brands-svg-icons'
+import { Box } from '@mui/material'
 
 const Platform = ({platformName}) => {
     const platform = () => {
@@ -22,7 +23,7 @@ const Platform = ({platformName}) => {
     }
     const name = platform(platformName)
   return (
-    <div className='platform-icon'>{name}</div>
+    <Box>{name}</Box>
   )
 }
 

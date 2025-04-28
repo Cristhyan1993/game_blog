@@ -1,8 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import "../components/Text.css"
 import "../components/DynamicGame.css"
 import '../App.css'
+import { Box, Grid, styled, Typography } from '@mui/material'
+
+const BoxItem = styled(Box)(() => ({
+    borderRadius: "0.5rem",
+    boxShadow: "0.15rem 0.2rem 0.15rem 0.1rem rgba(0, 0, 0, .8)",
+    padding: 20,
+    textAlign: "center",
+}))
+
 const DynamicGame = () => {
     const [gameDetails, setGameDetails] = useState([]);
     const [gameScreenshots, setGameScreenshots] = useState([])
@@ -47,71 +55,70 @@ const DynamicGame = () => {
     return (
         <div className='main'>
             <div className='component-container'>
-                <div className='component-left' id='flex1'>
-                    <div className='dg-text-container'>
-                        <h1>{gameDetails.name}</h1>
-                        <div className='rating-container'>
+                <Box display="flex" flex="1">
+                    <Box display="flex" flexDirection="column" gap={2}>
+                        <Typography variant='h2' textTransform="uppercase">{gameDetails.name}</Typography>
+                        <Box display="flex" flexWrap="wrap" width="100%" justifyContent="space-around">
                             {gameDetails.ratings ? gameDetails.ratings.map((rating, ratingIndex) => {
                                 return (
-                                    <div key={ratingIndex} className='rating-item' id={rating.title}>
-                                        <h3>{rating.title}</h3>
-                                        <h2>{rating.count}</h2>
-                                    </div>
+                                    <Box textAlign="center" key={ratingIndex} id={rating.title} >
+                                        <Typography variant='h6' textTransform="uppercase">{rating.title}</Typography>
+                                        <Typography>{rating.count}</Typography>
+                                    </Box>
                                 )
                             }) : "loading"}
-                            <div className='rating-item'>
-                                <h3>Metacritic</h3>
-                                <h2>{gameDetails.metacritic}</h2>
-                            </div>
-                        </div>
-                        <div className='dg-text-component'>
-                            <div className='dg-text-component-left'>
-                                <h4>Description:</h4>
-                                <p>{gameDetails.description_raw}</p>
-                            </div>
-                            <div className='dg-text-component-right'>
-                                <div className='rating-item'>
-                                    <h4>Release Date:</h4>
-                                    <p>{gameDetails.released}</p>
-                                </div>
-                                <div className='rating-item'>
-                                    <h4>Genre:</h4>
+                            <Box textAlign="center">
+                                <Typography variant='h6' textTransform="uppercase">Metacritic</Typography>
+                                <Typography>{gameDetails.metacritic}</Typography>
+                            </Box>
+                        </Box>
+                        <Box display="flex" gap={2} sx={{flexDirection: {xs:"column", md:"row"}}}>
+                            <BoxItem flex="2" bgcolor="primary.main">
+                                <Typography >Description:</Typography>
+                                <Typography color='text.secondary'>{gameDetails.description_raw}</Typography>
+                            </BoxItem>
+                            <Box display="flex" flexDirection="column" flex="1" gap={2}>
+                                <BoxItem bgcolor="secondary.main">
+                                    <Typography>Release Date:</Typography>
+                                    <Typography color='text.secondary'>{gameDetails.released}</Typography>
+                                </BoxItem>
+                                <BoxItem bgcolor="secondary.dark">
+                                    <Typography>Genre:</Typography>
                                     {gameDetails.genres ? gameDetails.genres.map((genre, genreIndex) => {
                                         return (
-                                            <p key={genreIndex}>{genre.name}</p>
+                                            <Typography color='text.secondary' key={genreIndex}>{genre.name}</Typography>
                                         )
                                     }) : "loading"}
-                                </div>
-                                <div className='rating-item'>
-                                    <h4>Developer:</h4>
+                                </BoxItem>
+                                <BoxItem bgcolor="secondary.main">
+                                    <Typography>Developer:</Typography>
                                     {/* this is an array. might need to change if there are multiple developers */}
-                                    <p>{gameDetails.developers ? gameDetails.developers[0].name : "loading"}</p>
-                                </div>
-                                <div className='rating-item'>
-                                    <h4>Platforms:</h4>
-                                    <p>{gameDetails.parent_platforms ? gameDetails.parent_platforms[0].name : "loading"}</p>
+                                    <Typography color='text.secondary'>{gameDetails.developers ? gameDetails.developers[0].name : "loading"}</Typography>
+                                </BoxItem>
+                                <BoxItem bgcolor="secondary.dark">
+                                    <Typography>Platforms:</Typography>
+                                    <Typography>{gameDetails.parent_platforms ? gameDetails.parent_platforms[0].name : "loading"}</Typography>
                                     {gameDetails.parent_platforms ? gameDetails.parent_platforms.map((platform, platformIndex) => {
                                         return (
-                                            <p key={platformIndex}>{platform.platform.name}</p>
+                                            <Typography color='text.secondary' key={platformIndex}>{platform.platform.name}</Typography>
                                         )
                                     }) : "loading"}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className='component-right' >
-                    <div className='image-container'>
-                        <img src={gameDetails.background_image} alt="background of game" />
-                    </div>
-                    <div className='grid-container-images'>
+                                </BoxItem>
+                            </Box>
+                        </Box>
+                    </Box>
+                </Box>
+                <Box flex="1">           
+                        <img src={gameDetails.background_image} alt="background of game" width="100%" />
+                    <Grid container spacing={1}>
                         {gameScreenshots.map((screenshot, index) => {
                             return (
-                                <img src={screenshot.image} alt="screenshot of game" className='grid-item-images' key={index} />
-                            )
+                                <Grid size={{xs: 12, md: 6}}>
+                                <img src={screenshot.image} alt="screenshot of game" key={index} width="100%"/>
+                           </Grid> )
                         })}
-                    </div>
-                </div>
+                    </Grid>
+                </Box>
             </div>
         </div>
     )

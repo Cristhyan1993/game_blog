@@ -6,6 +6,7 @@ import VideoCards from "../components/VideoCards";
 import SwiperComponent from "../components/Swiper";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import { Typography } from "@mui/material";
 
 
 function Ctr() {
@@ -52,9 +53,9 @@ function Ctr() {
         <GameDetails gameDetails={ctrDetails} />
         <SwiperComponent gameDetails={ctrDetails} />
         <VideoCards cardDetails={ctrDetails} />
-        <h3>More CTR videos can be found on my <Link to='https://www.youtube.com/@nayhtsirc'
+        <Typography gutterBottom>More CTR videos can be found on my <Link to='https://www.youtube.com/@nayhtsirc'
               target='_blank'
-              aria-label='Youtube'>Youtube channel</Link></h3>
+              aria-label='Youtube'>Youtube channel</Link></Typography>
       </div>
     </div>
   );
